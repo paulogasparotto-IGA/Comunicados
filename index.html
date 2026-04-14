@@ -6,33 +6,15 @@
   <title>Comunicados — Grupo KP&SB</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --bg: #f8f7f4;
-      --surface: #ffffff;
-      --border: #e4e2dc;
-      --text: #1a1a18;
-      --muted: #6b6a65;
-      --hint: #a09f9a;
-      --accent: #185FA5;
-      --accent-light: #E6F1FB;
-      --accent-text: #0C447C;
-      --green-light: #E1F5EE;
-      --green-text: #085041;
-      --amber-light: #FAEEDA;
-      --amber-text: #633806;
-      --gray-light: #F1EFE8;
-      --gray-text: #5F5E5A;
+      --bg: #f8f7f4; --surface: #ffffff; --border: #e4e2dc;
+      --text: #1a1a18; --muted: #6b6a65; --hint: #a09f9a;
+      --accent: #185FA5; --accent-light: #E6F1FB; --accent-text: #0C447C;
+      --green-light: #E1F5EE; --green-text: #085041;
+      --amber-light: #FAEEDA; --amber-text: #633806;
+      --gray-light: #F1EFE8; --gray-text: #5F5E5A;
     }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; }
     header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 2rem 0; }
     .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
     .header-inner { display: flex; align-items: center; gap: 1rem; }
@@ -40,28 +22,25 @@
     .logo-mark svg { width: 22px; height: 22px; }
     .header-text h1 { font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
     .header-text p { font-size: 13px; color: var(--muted); margin-top: 2px; }
-
     .badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; line-height: 1.4; }
     .badge-green { background: var(--green-light); color: var(--green-text); }
     .badge-amber { background: var(--amber-light); color: var(--amber-text); }
     .badge-gray  { background: var(--gray-light);  color: var(--gray-text); }
-
     main { padding: 2.5rem 0 4rem; }
     .section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
     .section-header h2 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
     .year-label { font-size: 12px; color: var(--hint); }
-
     .card-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 2.5rem; }
     .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; text-decoration: none; color: inherit; transition: border-color .15s, box-shadow .15s; }
     .card:hover { border-color: #b5b3ac; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
     .card.disabled { opacity: .55; pointer-events: none; }
     .card-left { display: flex; align-items: center; gap: 14px; }
     .month-dot { width: 36px; height: 36px; border-radius: 8px; background: var(--accent-light); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: var(--accent-text); flex-shrink: 0; letter-spacing: .02em; }
+    .month-dot.inactive { background: var(--gray-light); color: var(--gray-text); }
     .card-title { font-size: 14px; font-weight: 500; }
     .card-meta { font-size: 12px; color: var(--muted); margin-top: 2px; }
     .card-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
     .arrow { width: 18px; height: 18px; color: var(--hint); }
-
     .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
     .info-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem 1.5rem; }
     .info-box h3 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: .75rem; }
@@ -69,15 +48,10 @@
     .info-box p + p { margin-top: .5rem; }
     .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: .75rem; }
     .tag { font-size: 11px; background: var(--gray-light); color: var(--gray-text); padding: 3px 10px; border-radius: 20px; }
-
     footer { border-top: 1px solid var(--border); padding: 1.5rem 0; text-align: center; font-size: 12px; color: var(--hint); }
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 600px) {
-      .card { flex-direction: column; align-items: flex-start; }
-      .card-right { margin-top: 4px; }
-    }
+    @media (max-width: 600px) { .card { flex-direction: column; align-items: flex-start; } .card-right { margin-top: 4px; } }
   </style>
 </head>
 <body>
@@ -104,17 +78,17 @@
 
     <div class="section-header">
       <h2>Comunicados mensais</h2>
-      <span class="year-label">2026</span>
+      <span class="year-label">Mar/2026 – Fev/2027</span>
     </div>
 
     <div class="card-list">
 
-      <a class="card" href="comunicados/2026/04-abril-jogoresponsavel.html">
+      <a class="card" href="comunicados/2026/03-marco-pldft.html">
         <div class="card-left">
-          <div class="month-dot">ABR</div>
+          <div class="month-dot">MAR</div>
           <div>
-            <div class="card-title">Jogo Responsável — Programa Institucional</div>
-            <div class="card-meta">Comunicado mensal · Abril 2026 · Todos os colaboradores</div>
+            <div class="card-title">Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo</div>
+            <div class="card-meta">Março 2026 · Todos os colaboradores</div>
           </div>
         </div>
         <div class="card-right">
@@ -123,12 +97,12 @@
         </div>
       </a>
 
-      <a class="card" href="comunicados/2026/03-marco-pldft.html">
+      <a class="card" href="comunicados/2026/04-abril-jogoresponsavel.html">
         <div class="card-left">
-          <div class="month-dot">MAR</div>
+          <div class="month-dot">ABR</div>
           <div>
-            <div class="card-title">Prevenção à Lavagem de Dinheiro e ao Financiamento do Terrorismo</div>
-            <div class="card-meta">Comunicado mensal · Março 2026 · Todos os colaboradores</div>
+            <div class="card-title">Jogo Responsável — Programa Institucional</div>
+            <div class="card-meta">Abril 2026 · Todos os colaboradores</div>
           </div>
         </div>
         <div class="card-right">
@@ -139,15 +113,112 @@
 
       <div class="card disabled">
         <div class="card-left">
-          <div class="month-dot" style="background:var(--gray-light);color:var(--gray-text);">MAI</div>
+          <div class="month-dot inactive">MAI</div>
           <div>
-            <div class="card-title">Comunicado mensal · Maio 2026</div>
-            <div class="card-meta">Planejado · Publicação prevista: 10/05/2026</div>
+            <div class="card-title">Ética, integridade e conflito de interesses</div>
+            <div class="card-meta">Maio 2026 · Todos os colaboradores</div>
           </div>
         </div>
-        <div class="card-right">
-          <span class="badge badge-gray">Planejado</span>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
+      </div>
+
+      <div class="card disabled">
+        <div class="card-left">
+          <div class="month-dot inactive">JUN</div>
+          <div>
+            <div class="card-title">Fraude interna e externa</div>
+            <div class="card-meta">Junho 2026 · Operações, pagamentos, risco, atendimento</div>
+          </div>
         </div>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
+      </div>
+
+      <div class="card disabled">
+        <div class="card-left">
+          <div class="month-dot inactive">JUL</div>
+          <div>
+            <div class="card-title">KYC, cadastro e diligência do cliente</div>
+            <div class="card-meta">Julho 2026 · Cadastro, atendimento, pagamentos, operações</div>
+          </div>
+        </div>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
+      </div>
+
+      <div class="card disabled">
+        <div class="card-left">
+          <div class="month-dot inactive">AGO</div>
+          <div>
+            <div class="card-title">Comunicação com regulador, COAF e preservação de sigilo</div>
+            <div class="card-meta">Agosto 2026 · Compliance, jurídico, PLD, liderança</div>
+          </div>
+        </div>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
+      </div>
+
+      <div class="card disabled">
+        <div class="card-left">
+          <div class="month-dot inactive">SET</div>
+          <div>
+            <div class="card-title">Publicidade responsável e conduta de afiliados</div>
+            <div class="card-meta">Setembro 2026 · Marketing, CRM, afiliados, comercial</div>
+          </div>
+        </div>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
+      </div>
+
+      <div class="card disabled">
+        <div class="card-left">
+          <div class="month-dot inactive">OUT</div>
+          <div>
+            <div class="card-title">Monitoramento de operações e perfis de risco (AML)</div>
+            <div class="card-meta">Outubro 2026 · Compliance, PLD, risco, pagamentos</div>
+          </div>
+        </div>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
+      </div>
+
+      <div class="card disabled">
+        <div class="card-left">
+          <div class="month-dot inactive">NOV</div>
+          <div>
+            <div class="card-title">Terceiros críticos e due diligence de fornecedores</div>
+            <div class="card-meta">Novembro 2026 · Compras, jurídico, compliance, operações, TI</div>
+          </div>
+        </div>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
+      </div>
+
+      <div class="card disabled">
+        <div class="card-left">
+          <div class="month-dot inactive">DEZ</div>
+          <div>
+            <div class="card-title">Canal de denúncias, não retaliação e apuração</div>
+            <div class="card-meta">Dezembro 2026 · Todos os colaboradores</div>
+          </div>
+        </div>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
+      </div>
+
+      <div class="card disabled">
+        <div class="card-left">
+          <div class="month-dot inactive">JAN</div>
+          <div>
+            <div class="card-title">Guarda de documentos, evidências e prontidão fiscalizatória</div>
+            <div class="card-meta">Janeiro 2027 · Compliance, jurídico, PLD, operações, TI</div>
+          </div>
+        </div>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
+      </div>
+
+      <div class="card disabled">
+        <div class="card-left">
+          <div class="month-dot inactive">FEV</div>
+          <div>
+            <div class="card-title">Reciclagem anual de compliance regulatório</div>
+            <div class="card-meta">Fevereiro 2027 · Todos os colaboradores</div>
+          </div>
+        </div>
+        <div class="card-right"><span class="badge badge-gray">Planejado</span></div>
       </div>
 
     </div>
@@ -161,6 +232,9 @@
       <div class="tag-row">
         <span class="tag">PLD/FT</span>
         <span class="tag">Jogo responsável</span>
+        <span class="tag">Ética e integridade</span>
+        <span class="tag">AML</span>
+        <span class="tag">KYC</span>
         <span class="tag">Compliance</span>
         <span class="tag">iGaming</span>
         <span class="tag">Regulatório BR</span>
